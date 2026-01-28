@@ -1,0 +1,512 @@
+/* ===== Variabili CSS ===== */
+:root {
+    --primary-color: #495057;
+    --secondary-color: #ffc107;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+/* ===== General Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('tirano-bg.jpg') center/cover no-repeat fixed;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.hero-section .display-4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffc107;
+}
+
+.hero-icon {
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* ===== Servizi Section ===== */
+#servizi {
+    background: linear-gradient(rgba(248, 249, 250, 0.5), rgba(248, 249, 250, 0.5)), 
+                url('tirano-bg.jpg') center/cover no-repeat fixed !important;
+}
+
+/* ===== Contatti Section ===== */
+#contatti {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('tirano-bg.jpg') center/cover no-repeat fixed !important;
+}
+
+/* ===== Vantaggi Section ===== */
+#vantaggi {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('tirano-bg.jpg') center/cover no-repeat fixed !important;
+}
+
+/* ===== Testimonianze Section ===== */
+#testimonianze {
+    background: linear-gradient(rgba(248, 249, 250, 0.5), rgba(248, 249, 250, 0.5)), 
+                url('tirano-bg.jpg') center/cover no-repeat fixed !important;
+}
+
+/* ===== Contatti Page Sections ===== */
+/* Sezione Informazioni di Contatto */
+body > section:nth-of-type(2) {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('tirano-bg.jpg') center/cover no-repeat fixed !important;
+}
+
+/* Sezione Mappa contatti.html */
+body > section.py-5.bg-light {
+    background: linear-gradient(rgba(248, 249, 250, 0.5), rgba(248, 249, 250, 0.5)), 
+                url('tirano-bg.jpg') center/cover no-repeat fixed !important;
+}
+
+/* ===== Service Cards ===== */
+.service-card {
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.service-card:hover::before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card.bg-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #ffb300 100%);
+}
+
+.service-card.bg-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ce5 100%);
+}
+
+.service-card.bg-success {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+}
+
+.service-card.bg-brown {
+    background: linear-gradient(135deg, #8B6914 0%, #6b5310 100%);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.service-card h5 {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.service-card ul {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+/* ===== Cards Gradient ===== */
+.bg-gradient {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* ===== Advantage Section ===== */
+.advantage-box {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--primary-color);
+}
+
+.advantage-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.advantage-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.advantage-box h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.advantage-box p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===== Testimonial Section ===== */
+.testimonial-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-card .stars {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.testimonial-card p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.testimonial-card strong {
+    color: #212529;
+    display: block;
+    margin-top: 15px;
+}
+
+/* ===== Contact Section ===== */
+.contact-info {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.contact-info .d-flex {
+    transition: all 0.3s ease;
+}
+
+.contact-info .d-flex:hover {
+    transform: translateX(5px);
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #343a40;
+}
+
+#contactForm .form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+#contactForm .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+#contactForm .form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #343a40;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(73, 80, 87, 0.3);
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background-color: #ffb300;
+    color: #212529;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+}
+
+.btn-light {
+    background-color: white;
+    color: #212529;
+    border: 2px solid white;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: linear-gradient(135deg, #212529 0%, #1a1d20 100%);
+    border-top: 4px solid var(--primary-color);
+}
+
+footer h6 {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+footer h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-color) !important;
+}
+
+footer .small {
+    line-height: 1.8;
+}
+
+/* ===== Sections ===== */
+section {
+    position: relative;
+}
+
+section h2 {
+    color: #212529;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+/* ===== CTA Section ===== */
+.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0b5ce5 100%) !important;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 400px;
+    }
+
+    .hero-section .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .hero-icon {
+        font-size: 80px;
+        opacity: 0.5;
+    }
+
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    footer h6::after {
+        width: 25px;
+    }
+
+    #contactForm .d-grid {
+        gap: 10px;
+    }
+
+    .btn-lg {
+        padding: 10px 20px !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .advantage-icon {
+        font-size: 2rem;
+    }
+}
+
+/* ===== Scroll Animations ===== */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}

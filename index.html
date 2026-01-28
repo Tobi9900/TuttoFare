@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="F&F Tuttofare - Servizi di manutenzione elettrica, idraulica, verde e svuota cantine a Tirano">
+    <meta name="theme-color" content="#212529">
+    <title>F&F Tuttofare - Manutenzione Elettrica, Idraulica e Verde a Tirano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Sticky -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <!-- Prima riga: Nome + Bottoni -->
+            <div class="w-100 d-flex justify-content-center align-items-center mb-2 gap-3">
+                <a class="navbar-brand fw-bold me-auto" href="#">
+                    <i class="fas fa-tools me-2"></i>F&F Tuttofare
+                </a>
+                <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#preventivo">Richiedi Preventivo</a>
+                <a href="https://wa.me/393473968952" class="btn btn-light btn-sm" target="_blank">
+                    <i class="fab fa-whatsapp me-1"></i>WhatsApp
+                </a>
+            </div>
+            
+            <!-- Seconda riga: Link Navigazione -->
+            <button class="navbar-toggler w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vantaggi">Perché Noi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Servizi -->
+    <section id="servizi" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold">I Nostri Servizi</h2>
+            <p class="text-center text-muted mb-5">Offriamo soluzioni complete per tutte le tue esigenze di manutenzione</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="elettrica.html" class="text-decoration-none">
+                        <div class="service-card bg-warning h-100">
+                            <div class="service-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h5>Manutenzione Elettrica</h5>
+                            <p class="small">Piccoli interventi elettrici domestici rapidi ed efficaci per risolvere i problemi comuni in casa.</p>
+                            <ul class="small ps-3">
+                                <li>Riparazioni impianti</li>
+                                <li>Installazione prese e interruttori</li>
+                                <li>Controlli e certificazioni</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="idraulica.html" class="text-decoration-none">
+                        <div class="service-card bg-primary h-100">
+                            <div class="service-icon">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <h5>Lavori Idraulici</h5>
+                            <p class="small">Piccoli lavori di idraulica domestica ideali per risolvere rapidamente i problemi comuni.</p>
+                            <ul class="small ps-3">
+                                <li>Riparazione tubature</li>
+                                <li>Rubinetti e sifoni</li>
+                                <li>Scarichi e sanitari</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="verde.html" class="text-decoration-none">
+                        <div class="service-card bg-success h-100">
+                            <div class="service-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h5>Manutenzione Verde</h5>
+                            <p class="small">Servizio completo di manutenzione verde flessibile e adattabile a ogni esigenza.</p>
+                            <ul class="small ps-3">
+                                <li>Taglio erba e siepi</li>
+                                <li>Potatura alberi</li>
+                                <li>Pulizia aree verdi</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="cantine.html" class="text-decoration-none">
+                        <div class="service-card bg-brown h-100">
+                            <div class="service-icon">
+                                <i class="fas fa-trash"></i>
+                            </div>
+                            <h5>Svuota Cantine</h5>
+                            <p class="small">Sgombero locali rapido e senza stress per liberare spazi in modo efficace.</p>
+                            <ul class="small ps-3">
+                                <li>Svuotamento completo</li>
+                                <li>Rimozione materiali vari</li>
+                                <li>Pulizia finale</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti / Staff -->
+    <section id="contatti" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold"><i class="fas fa-users text-warning me-2"></i>Il Nostro Staff</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-user text-warning fs-1 mb-3"></i>
+                            <h4 class="card-title mb-3">Tobia Fontana</h4>
+                            <div class="d-flex flex-column gap-2">
+                                <a href="tel:+393473968952" class="btn btn-outline-primary btn-lg">
+                                    <i class="fas fa-phone me-2"></i>+39 347 396 8952
+                                </a>
+                                <a href="mailto:tobia.fontana@gmail.com" class="btn btn-outline-secondary btn-lg">
+                                    <i class="fas fa-envelope me-2"></i>tobia.fontana@gmail.com
+                                </a>
+                                <a href="https://wa.me/393473968952" class="btn btn-success btn-lg" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-user text-warning fs-1 mb-3"></i>
+                            <h4 class="card-title mb-3">Ivan Franetti</h4>
+                            <div class="d-flex flex-column gap-2">
+                                <a href="tel:+393406092242" class="btn btn-outline-primary btn-lg">
+                                    <i class="fas fa-phone me-2"></i>+39 340 609 2242
+                                </a>
+                                <a href="mailto:ivan.franetti@gmail.com" class="btn btn-outline-secondary btn-lg">
+                                    <i class="fas fa-envelope me-2"></i>ivan.franetti@gmail.com
+                                </a>
+                                <a href="https://wa.me/393406092242" class="btn btn-success btn-lg" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5 g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-map-marker-alt text-warning fs-1 mb-3"></i>
+                            <h5 class="card-title fw-bold mb-3">Dove Trovarci</h5>
+                            <p class="text-muted mb-3">Servizi a Tirano e provincia</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.1449999999997!2d10.157!3d46.5701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d5b5c3e3e3e3e3%3A0x4e4e4e4e4e4e4e4e!2sTirano%2C%2023037%20SO%2C%20Italia!5e0!3m2!1sit!2sit!4v1706438400000" width="100%" height="350" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg h-100 bg-gradient">
+                        <div class="card-body p-5 text-center">
+                            <i class="fas fa-clock text-warning fs-1 mb-4"></i>
+                            <h4 class="card-title fw-bold mb-5 display-6">Orari di Lavoro</h4>
+                            <div class="d-flex flex-column gap-4">
+                                <div class="border-start border-warning border-4 ps-4 text-start py-3">
+                                    <h5 class="text-dark fw-bold mb-2">Lunedì - Venerdì</h5>
+                                    <p class="mb-1 fs-5 text-muted">08:00 - 12:00</p>
+                                    <p class="mb-0 fs-5 text-muted">13:00 - 17:00</p>
+                                </div>
+                                <div class="border-start border-warning border-4 ps-4 text-start py-3">
+                                    <h5 class="text-dark fw-bold mb-2">Sabato - Domenica</h5>
+                                    <p class="mb-0 fs-5 text-muted">Chiuso</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantaggi -->
+    <section id="vantaggi" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold">Perché Scegliere F&F Tuttofare</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="advantage-box">
+                        <div class="advantage-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5>Esperienza</h5>
+                        <p>Team competente e affidabile con anni di esperienza nel settore manutenzione.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantage-box">
+                        <div class="advantage-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5>Rapidi e Efficienti</h5>
+                        <p>Interventi celeri e professionali, sempre rispettando i tempi concordati.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantage-box">
+                        <div class="advantage-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h5>Trasparente e Affidabile</h5>
+                        <p>Prezzi chiari, preventivi accurati e massima disponibilità verso il cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonianze -->
+    <section id="testimonianze" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold">Cosa Dicono i Nostri Clienti</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic">"Ragazzi molto professionali. Sono stati veloci e hanno risolto il problema in poco tempo. Consigliati!"</p>
+                        <strong>Marco R.</strong>
+                        <small class="text-muted d-block">Lavori Elettrici</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic">"Lavoro ben fatto, molto attento ai dettagli. Perfettamente in orario. Lo consiglio!"</p>
+                        <strong>Giulia M.</strong>
+                        <small class="text-muted d-block">Riparazioni Idrauliche</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic">"Servizio di svuota cantine impeccabile. Professionali e puntuali, grazie!"</p>
+                        <strong>Antonio V.</strong>
+                        <small class="text-muted d-block">Svuota Cantine</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-secondary text-white text-center">
+        <div class="container py-5">
+            <h3 class="display-6 fw-bold mb-4">Hai un'esigenza? Contattaci oggi stesso!</h3>
+            <p class="lead mb-4">Rispondiamo velocemente a tutte le richieste di preventivo</p>
+            <a href="#" class="btn btn-warning btn-lg me-2" data-bs-toggle="modal" data-bs-target="#preventivo">Richiedi Preventivo</a>
+            <a href="tel:+393473968952" class="btn btn-light btn-lg"><i class="fas fa-phone me-2"></i>Chiama Ora</a>
+        </div>
+    </section>
+
+    <!-- Modal Richiesta Preventivo -->
+    <div class="modal fade" id="preventivo" tabindex="-1" aria-labelledby="preventivoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-warning border-0">
+                    <h4 class="modal-title fw-bold" id="preventivoLabel"><i class="fas fa-edit me-2"></i>Richiedi un Preventivo</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-bold">Nome e Cognome</label>
+                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Scrivi il tuo nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label fw-bold">Numero di Telefono</label>
+                            <input type="tel" class="form-control form-control-lg" id="phone" placeholder="es. +39 347 123 4567" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-bold">Descrivi il tuo intervento</label>
+                            <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Scrivi i dettagli del lavoro che ti serve..." required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 gap-2 justify-content-center pb-4">
+                    <button type="button" class="btn btn-success btn-lg" onclick="sendWhatsApp()">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="sendEmail()">
+                        <i class="fas fa-envelope me-2"></i>Email
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal" onclick="resetForm()">
+                        <i class="fas fa-times me-2"></i>Chiudi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h6 class="mb-3"><i class="fas fa-tools me-2"></i>F&F Tuttofare</h6>
+                    <p class="small">Piccoli interventi di manutenzione a Tirano e provincia con professionalità e affidabilità.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h6 class="mb-3">Servizi</h6>
+                    <ul class="small list-unstyled">
+                        <li><a href="#servizi" class="text-white-50 text-decoration-none">Manutenzione Elettrica</a></li>
+                        <li><a href="#servizi" class="text-white-50 text-decoration-none">Lavori Idraulici</a></li>
+                        <li><a href="#servizi" class="text-white-50 text-decoration-none">Manutenzione Verde</a></li>
+                        <li><a href="#servizi" class="text-white-50 text-decoration-none">Svuota Cantine</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="mb-3">Contatti Rapidi</h6>
+                    <p class="small mb-1"><a href="tel:+393473968952" class="text-white-50 text-decoration-none"><i class="fas fa-phone me-2"></i>+39 347 396 8952</a></p>
+                    <p class="small mb-1"><a href="https://wa.me/393473968952" class="text-white-50 text-decoration-none"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a></p>
+                    <p class="small mb-3"><a href="mailto:tobia.fontana@gmail.com" class="text-white-50 text-decoration-none"><i class="fas fa-envelope me-2"></i>Email</a></p>
+                    <h6 class="mb-3"><i class="fas fa-clock me-2"></i>Orari di Lavoro</h6>
+                    <p class="mb-1"><strong>Lunedì - Venerdì</strong></p>
+                    <p class="mb-2">08:00 - 12:00 | 13:00 - 17:00</p>
+                    <p class="mb-0"><strong>Sabato - Domenica:</strong> Chiuso</p>
+                </div>
+            </div>
+            <hr class="my-3 border-secondary">
+            <div class="text-center">
+                <p class="small mb-0">&copy; 2026 F&F Tuttofare - Tutti i diritti riservati. | Progettato con <i class="fas fa-heart text-danger"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
