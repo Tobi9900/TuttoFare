@@ -488,6 +488,19 @@ section h2::after {
 
     .service-card {
         margin-bottom: 20px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #servizi .row {
+        justify-content: center;
+    }
+    
+    #servizi .col-md-6,
+    #servizi .col-lg-3 {
+        display: flex;
+        justify-content: center;
     }
 
     footer h6::after {
@@ -495,6 +508,20 @@ section h2::after {
     }
 
     #contactForm .d-grid {
+    
+    #servizi .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .service-card {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #servizi h2 {
+        font-size: 1.8rem;
+    }
         gap: 10px;
     }
 
